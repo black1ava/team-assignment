@@ -4,16 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Computer Spec</title>
+  <style>
+    @import url(../index.css);
+  </style>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js"></script>  
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+  <script defer src="../store/index.js"></script>
   <script defer src="index.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/eruda"></script>
-  <script>eruda.init();</script>
-  <title>Computer-Spec: Sign Up</title>
-</head>
 <body>
-  <form action="../index.html" method="post">
-    <input type="text" id="name">
-    <input type="password" id="password">
-    <button id="sign-up">Sign Up</button>
-  </form>
+  <section id="container">
+    <header>
+      <h1>Sign Up</h1>
+    </header>
+    <form action="../index.html" method="POST" id="form-signup">
+      <span class="alert">* Username is already exist</span>
+      <section class="section">
+        <label id="lblName">Name</label>
+        <input type="text" name="name" placeholder="Username" required>
+      </section>
+      <span class="alert">* Password must be 8 characters up</span>
+      <section class="section">
+        <label id="lblPassword">Password</label>
+        <input type="password" name="password" placeholder="Password: 8 characters up" required>
+      </section>
+      <span class="alert">* Password is not matched</span>
+      <section class="section">
+        <label id="lblConfirm">Confirm</label>
+        <input type="password" name="re_password" placeholder="confirm Password" required>
+      </section>
+      <section class="section">
+        <button>Sign Up</button>
+      </section>
+    </form>
+    <form action="../index.html" action="POST">
+      <button id="btnReturn">Go Back</button>
+    </form>
+  </section>
 </body>
 </html>

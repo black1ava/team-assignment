@@ -1,0 +1,39 @@
+#navigation{
+  background: lightsalmon;
+  width: 25vw;
+  position: fixed;
+  left: -25vw;
+  height: 90vh; 
+  overflow: scroll;
+  transition: left 1.5s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+::-webkit-scrollbar{
+  width: 0;
+  background: transparent;
+}
+
+#check{
+  display: none;
+}
+
+#menu{
+  cursor: pointer;
+}
+
+#check:checked ~ #navigation{
+  left: 0;
+
+}
+
+ .click, #add{
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 0;
+    cursor: pointer;
+ }
+
+ .click:hover, #add:hover{
+    background: black;
+    color: white;
+ }

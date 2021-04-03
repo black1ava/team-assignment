@@ -5,18 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Computer Spec</title>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js"></script>  
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+  <script defer src="store/index.js"></script>
   <script defer src="index.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/eruda"></script>
-  <script>eruda.init();</script>
-</head>
+  <style>
+    @import url(index.css);
+  </style>
+  <script defer src="index.js"></script>
 <body>
-  <form action="Home-Page/index.html" method="POST">
-    <input type="text" id="name" name="name">
-    <input type="password" id="password" name="password">
-    <button id="sign-in">Sign in</button>
-  </form>
-  <form action="Sign-Up-Page/index.html" method="POST">
-    <button>Sign Up</button>
-  </form>
+  <section id="container">
+    <header>
+      <h1>Sign In</h1>
+    </header>
+    <form action="Home-Page/index.html" method="POST" id="form-signin">
+      <section class="section">
+        <label id="lblName">Name</label>
+        <input type="text" id="name" name="name" placeholder="Username">
+      </section>
+      <section class="section">
+        <label id="lblPassword">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password">
+      </section>
+      <button id="sign-in">Sign in</button>
+    </form>
+    <form action="Sign-Up-Page/index.html" method="POST">
+      <button id="btn-signup">Sign Up</button>
+    </form>
+  </section>
 </body>
 </html>

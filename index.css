@@ -1,0 +1,66 @@
+#lblName{
+  margin-right: 1%;
+  padding-right: 0.8%;
+}
+
+#container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#nameSec, #passwordSec{
+  margin: 2% 0 2% 0;
+}
+
+#form-signup{
+  display: flex;
+  flex-direction: column;
+}
+
+.section{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.section label, .section input{
+  font-size: 22px;
+}
+
+#lblPassword{
+  margin-right: 15px;
+}
+
+#lblName{
+  margin-right: 50px;
+}
+
+#lblConfirm{
+  margin-right: 34px;
+}
+
+button, #btnReturn{
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 2%;
+  background: lightsalmon;
+  box-shadow: 5px 5px 10px black;
+  outline: none;
+  cursor: pointer;
+}
+
+#btnReturn, #btn-signup{
+  width: 420px;
+}
+
+.alert{
+  color: red;
+  text-align: center;
+  display: none;
+  font-size: 16px;
+}
